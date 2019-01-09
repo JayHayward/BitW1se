@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="/public/styles.css">
+	<link rel="stylesheet" href="/public/awesomplete.css" />
+<head>
+	<title>Bitwise.</title>
+	<meta charset="UTF-8" />
+	<script src="/public/jquery-3.3.1.min.js"></script>
+	<script src="/public/awesomplete.js" async></script>
+
+</head>
+
+<body>
+	<div class="navigation">
+		<input class="awesomplete" id="textbox" placeholder="Enter an Expression"></inptu>
+		<!-- <a href="#" class="active">Home</a> -->
+		<!-- <a href="#">Popular</a>
+		<a href="#">Recent</a>
+		<a href="#">About</a> -->
+	</div>
+
+	<div class="inputs">
+	  	<div id="display1">
+			Your first value is:
+			<span id="argSpan1">___</span><br/>
+			Its binary representations is:
+			<span id="argSpanB1">___</span>
+	  	</div></br>
+	  <div id="display2">
+		Your second value is:
+		<span id="argSpan2">___</span><br/>
+		Its binary representations is:
+		<span id="argSpanB2">___</span>
+	  </div></br>
+	  <div id="op">
+		The operator is:
+		<span id="operatorSpan">___</span>
+		<span id="opname">___</span>
+	  </div></br></br>
+	</div>
+
+	<div class="function">
+	<div style="margin-left: 10px">
+		<div style="margin-top: 10px;" id="resultDiv"></div>
+		<div style="margin-left: 10px">
+			<span id="firstIntSpan">N/A</span></br>
+			<div id="operatorDiv">?</div>
+			<span id="secondIntSpan">N/A</span>
+		<div id="resultSpan"></div>
+	</div>
+	</div>
+
+	<a onclick="toggleHelp()" class="button" >
+		<img src="./public/qmark.jpg" style="height:auto;width:20px;">
+	</a>
+	<div id="helpDiv" style="display:none;" class="instructions">
+		<p> <b>Supported Bitwise Operators:</b> </p>
+		<table style="">
+			<tr>
+				<td>&</td><td>bitwise AND</td>
+			</tr>
+			<tr>
+				<td>|</td><td>bitwise inclusive OR</td></tr>
+			<tr>
+				<td>^</td><td>bitwise exclusive XOR</td>
+			</tr>
+			<tr>
+				<td>~</td><td>bitwise NOT</td>
+			</tr>
+			<tr>
+				<td><<</td><td>left shift</td>
+			</tr>
+			<tr>
+				<td>>></td><td>arithmatic right shift</td>
+			</tr>
+			<tr>
+				<td>>>></td><td>logical (zero-fill) right shift</td>
+			</tr>
+		</table>
+		<p> <b>binary inputs: type '0b' before each number </b> </p>
+		<p> <b>hexadecimal inputs: type '0x' before each number </b> </p>
+		<p> <b>Only 1 operator supported at a time</b> </p>
+	</div>
+
+	<div class="footer">
+	  <b>BitW1se:</b> The bitwise function visualizer
+	</div>
+</body>
+	<script src="../public/parse.js"></script>
+</html>

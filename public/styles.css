@@ -1,0 +1,147 @@
+.awesomplete ul {
+    list-style: none;
+    color: #AAA;
+    background: #333 !important;
+}
+.awesomplete ul:before {
+    background: #333 !important;
+}
+
+.result {
+	font-weight: bold;
+}
+
+html, body {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 100%
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: linear-gradient(to top left, black, grey);
+}
+
+header {
+
+}
+
+@import "compass/css3";
+
+.navigation {
+  margin: 0;
+  background: grey;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em; /* 1x size of text */
+  color: white;
+  font-size: 20px;
+}
+
+.navigation a:hover {
+  background: #636363;
+}
+
+.active {
+  background: darkgrey;
+}
+
+#textbox {
+  margin: 10px;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: 10px;
+	padding: .5em;
+}
+
+/* #search {
+  margin-right: auto;
+  margin: 10px;
+  font-size: 20px;
+} */
+
+.inputs {
+  font-size: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#di1, #di2, #bi1, #bi2 {
+  height: 1em;
+  font-size: 20px;
+}
+
+
+.function {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#operatorDiv, #firstIntSpan, #secondIntSpan, #resultSpan {
+  font-size: 25px;
+  height: 2em;
+}
+
+#operatorDiv {
+  float: right;
+	padding-left: 1em;;
+  top: 30px;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+#resultSpan {
+  margin-top: 8px;
+  border-top: 1px solid white;
+  padding-top: 3px;
+  font-size: 25px;
+}
+
+.button
+{
+	height:50px;
+	position:fixed;
+	bottom:-0.3%;
+	right:4%;
+	max-height:5%;
+	z-index:2;
+	color: grey;
+}
+
+.instructions
+{
+  border:solid;
+	border-color:white;
+	position:fixed;
+	bottom:10%;
+	right:5%;
+	padding:20px;
+	color:white;
+	font-size:20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+	left: 0;
+  width: -webkit-fill-available;
+  background-color: grey;
+  color: white;
+  font-size: 15px;
+  padding: 1em;
+}
